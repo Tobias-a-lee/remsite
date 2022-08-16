@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="m-header">
+        <a href="#" class="logo"><img src="./images/logo-3.png" alt=""></a>
+        <a href="#" class="search iconfont icon-fangdajing"></a>
+        <a href="#" class="login iconfont icon-vip"></a>
+        <a href="#" class="download">下载 APP</a>
+    </header>
+    <!-- header end -->
+    <!-- nav start -->
+    <nav class="m-nav">
+        <div class="swiper-container" id="swiper-nav">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#" class="active">Top</a></div>
+                <div class="swiper-slide"><a href="#">Anime</a></div>
+                <div class="swiper-slide"><a href="#">Drama</a></div>
+                <div class="swiper-slide"><a href="#">apple</a></div>
+                <div class="swiper-slide"><a href="#">banana</a></div>
+                <div class="swiper-slide"><a href="#">grape</a></div>
+                <div class="swiper-slide"><a href="#">berry</a></div>
+                <div class="swiper-slide"><a href="#">kwit</a></div>
+                <div class="swiper-slide"><a href="#">mint</a></div>
+                <div class="swiper-slide"><a href="#">dill</a></div>
+                <div class="swiper-slide"><a href="#">grass</a></div>
+                <div class="swiper-slide"><a href="#">water</a></div>
+                <div class="swiper-slide"><a href="#">juice</a></div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- main start -->
+    <main class="m-main">
+        <section class="m-banner">
+            <div class="swiper-container" id="swiper-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">1<img src="" alt=""></div>
+                    <div class="swiper-slide">2<img src="" alt=""></div>
+                    <div class="swiper-slide">3<img src="" alt=""></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+        <nav class="m-menu">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <span>Game</span>
+                </li>
+            </ul>
+
+        </nav>
+        <section class="m-recommend"></section>
+        <section class="m-hot"></section>
+        <section class="m-focus"></section>
+        <section class="m-view-list"></section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="tabbar"></footer>
+    <!-- footer end -->
+    <!-- js start -->
+    <!-- 自适应 -->
+    <script>
+        // 把页面分成十份
+        function initPage() {
+            // 获取当前页面的HTML元素
+            var html = document.documentElement;
+            // 获取页面可视宽
+            var clientWidth = html.clientWidth;
+            // 动态计算font大小
+            html.style.fontSize = clientWidth / 10 + "px";
+        }
+        initPage();
+        window.onresize = initPage;
+    </script>
+    <script src="./fonts/iconfont.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- swiper-nav -->
+    <script>
+        var mySwiper = new Swiper('#swiper-nav', {
+            slidesPerView: 6.5,
+        });        
+    </script>
+    <!-- swiper-banner -->
+    <script>
+        var mySwiper = new Swiper('#swiper-banner', {
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })        
+    </script>
+</body>
+
+</html>

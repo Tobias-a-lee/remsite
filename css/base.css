@@ -1,0 +1,23 @@
+html,
+body {
+    font: .32rem/1.5 Microsoft YaHei;
+    color: #000;
+
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
