@@ -105,9 +105,10 @@
     opacity: .4;
     width: .1733rem;
     height: .08rem;
+    border-radius: 0px;
 }
 
-.swiper-pagination-bullet.active {
+.swiper-pagination-bullet-active {
     opacity: 1;
 }
 
