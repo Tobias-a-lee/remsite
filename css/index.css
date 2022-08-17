@@ -300,10 +300,11 @@
     margin-left: .16rem;
 }
 
-.commom-list .common-list-title {
+.common-list .common-list-title {
     height: .7733rem;
     line-height: 1.2;
     margin-top: .1867rem;
+    /* 多行省略号 */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -311,7 +312,7 @@
     -webkit-box-orient: vertical;
 }
 
-.commom-list .common-list-title a {
+.common-list p a {
     color: #000;
 }
 
