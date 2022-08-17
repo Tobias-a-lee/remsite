@@ -282,13 +282,14 @@
 .common-list a .mask .common-list-info span {
     width: .4133rem;
     height: .36rem;
-    background: url(../upload/play02@2x.png);
+    background: url(../upload/play02@2x.png) no-repeat;
     background-size: cover;
 
 }
 
 .common-list a .mask .common-list-info span {
-    background: url(../upload/comment_32@2x.png);
+    background: url(../upload/comment_32@2x.png) no-repeat;
+    background-size: cover;
 }
 
 .common-list a .mask .common-list-play i,
@@ -462,7 +463,7 @@
 /* tabbar */
 .tabbar {
     width: 100%;
-    height: 1.3333rem;
+    height: cale (1.3333rem + env(safe-area-inset-bottom));
     background-color: #fff;
     position: fixed;
     bottom: 0;
